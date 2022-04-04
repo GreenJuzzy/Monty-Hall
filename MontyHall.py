@@ -1,8 +1,10 @@
-import random, os
+import random
+import os
+
 
 def game():
     os.system("cls")
-    
+
     correctCard = random.randint(1, 3)
 
     # Start - Ascii Art
@@ -20,28 +22,23 @@ def game():
     print(m1)
     print("\n\n\n")
 
-    a_art_1 = " _____\n"
-    a_art_2 = "|     |\n"
-    a_art_3 = "|  1  |\n"
-    a_art_4 = "|     |\n"
-    a_art_5 = "|_____|\n"
+    card1 = """     _____
+    |     |
+    |  1  |
+    |     |
+    |_____|"""
 
-    b_art_1 = " _____\n"
-    b_art_2 = "|     |\n"
-    b_art_3 = "|  2  |\n"
-    b_art_4 = "|     |\n"
-    b_art_5 = "|_____|\n"
+    card2 = """     _____
+    |     |
+    |  2  |
+    |     |
+    |_____|"""
 
-    c_art_1 = " _____\n"
-    c_art_2 = "|     |\n"
-    c_art_3 = "|  3  |\n"
-    c_art_4 = "|     |\n"
-    c_art_5 = "|_____|\n"
-
-
-    card1 = a_art_1 + a_art_2 + a_art_3 + a_art_4 + a_art_5
-    card2 = b_art_1 + b_art_2 + b_art_3 + b_art_4 + b_art_5
-    card3 = c_art_1 + c_art_2 + c_art_3 + c_art_4 + c_art_5
+    card3 = """     _____
+    |     |
+    |  3  |
+    |     |
+    |_____|"""
 
     # End - Ascii Art
 
@@ -101,5 +98,6 @@ def game():
 
     else:
         0
+
 
 game()
